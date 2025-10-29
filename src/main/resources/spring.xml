@@ -4,8 +4,14 @@
         http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
     <!-- bean definitions here -->
-    <bean id="gold" class="com.skt.Bangaram">
 
-    </bean>
+        <bean id="rider" class="com.skt.Rider" autowire="byType">
+            <property name="bikeTopspeed" value="240"/>
+            <property name="name" value="HarleyDavidSon"/>
 
+
+        </bean>
+        <bean id="HarleyDavidSon" class="com.skt.HarleyDavidSon">
+
+        </bean>
 </beans>
