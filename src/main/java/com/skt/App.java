@@ -14,6 +14,9 @@ public class App
     {
         ApplicationContext context = new ClassPathXmlApplicationContext("spring.xml");
 
-        Bangaram bsr =(Bangaram) context.getBean("gold");
+        Rider rider = (Rider)context.getBean("rider");
+        System.out.println(rider.getName());
+         rider.getEngine().displacement();
+
     }
 }
